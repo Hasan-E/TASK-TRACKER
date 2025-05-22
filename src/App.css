@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../src/assets/task-bg.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+}
+
+.panel,
+.list {
+  width: 100%;
+  background-color: rgba(0, 255, 255, 0.65);
+  margin: 1rem;
+  border-radius: 15px;
+  padding: 2rem;
+  max-height: 85vh;
+  overflow: auto;
+}
+.panel {
+  height: 85vh;
+  h3 {
+    text-align: start;
+    color: black;
+  }
+  .head {
+    background-color: blueviolet;
+    border-radius: 20px;
+    color: wheat;
+    box-shadow: 5px 5px 20px black;
+    margin-bottom: 2rem;
+  }
+}
+form {
+  font-size: large;
+  font-weight: 700;
+  .formGroup {
+    margin: 1rem;
+  }
+  .btnGroup {
+    text-align: center;
+    margin: 1rem;
+  }
+}
+.task {
+  background-color: rgba(137, 43, 226, 0.493);
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 5px black;
+  h4 {
+    text-transform: capitalize;
+  }
+}
+.taskDone {
+  background-color: rgba(240, 38, 38, 0.589);
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 5px black;
+  h4 {
+    text-transform: capitalize;
+    text-decoration: line-through;
+  }
+}
+.btns {
+  display: flex;
+  align-items: center;
+  background-color: rgba(245, 222, 179, 0.377);
+  border-radius: 5px;
+}
+.step {
+  background-color: rgba(0, 255, 255, 0.562);
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 5px black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  p {
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+}
+.stepDone {
+  background-color: rgba(0, 255, 255, 0.562);
+  margin: 1rem;
+  border-left: 15px solid rgb(255, 0, 0);
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 5px black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  p {
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+}
+.doneIcon {
+  color: red;
+  font-size: 2rem;
+  align-self: center;
+  filter: drop-shadow(3px 3px 5px black);
+}
+.stepBtn {
+  display: flex;
+  align-items: center;
+  background-color: rgba(245, 222, 179, 0.377);
+  border-radius: 5px;
+}
+.btnX {
+  font-size: 1.8rem;
+  color: orangered;
+  padding: 0.25rem;
+}
+.btnEdit {
+  font-size: 1.8rem;
+  color: green;
+  padding: 0.25rem;
+}
+.btnUp,
+.btnDown {
+  font-size: 2rem;
+  color: blue;
+  padding: 0.25rem;
+}
+.stepEditInput {
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  outline: none;
+  padding: 3px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+}
+.editTask {
+  position: relative;
+  background-color: rgba(0, 255, 255, 0.877);
+  box-shadow: 5px 5px 20px black;
+  width: 30%;
+  height: 50%;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.8rem;
+  color: orangered;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.closeButton:hover {
+  color: red;
+}
