@@ -7,12 +7,12 @@ const Home = () => {
   const [data, setData] = useState(datas);
 
   return (
-    <div className="container">
+    <div className="container px-4">
       <div className="row">
-        <div className="col-lg-5 col-sm-11 ">
+        <div className="col-12 col-lg-5 mb-3">
           <TaskPanel data={data} setData={setData} />
         </div>
-        <div className="col-sm-11 col-lg-6">
+        <div className="col-12 col-lg-7">
           <TaskList data={data} setData={setData} />
         </div>
       </div>
