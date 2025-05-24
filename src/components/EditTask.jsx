@@ -26,7 +26,7 @@ const EditTask = ({ data, setData, clickId, setShowEditTask, setClickId }) => {
   }, [clickId]);
   return (
     <div className="editTask">
-    <FaRegWindowClose
+      <FaRegWindowClose
         className="closeButton"
         onClick={() => {
           setShowEditTask(false);

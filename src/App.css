@@ -162,6 +162,13 @@ form {
   padding: 2rem;
   border-radius: 15px;
 }
+@media (max-width: 768px){
+  .editTask{
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+}
 .closeButton {
   position: absolute;
   top: 10px;
