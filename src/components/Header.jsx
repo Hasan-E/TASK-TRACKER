@@ -17,7 +17,7 @@ const Header = () => {
       <div className="header">
         <h1 className="head text-center">TASK TRACKER</h1>
         <h2 className="date">Current Date & Time : </h2>
-        <h3>{date.format("MMMM Do YYYY,  h:mm:ss")}</h3>
+        <h3>{date.format("MMMM Do YYYY,dddd A h:mm:ss")}</h3>
       </div>
     </>
   );
